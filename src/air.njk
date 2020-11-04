@@ -11,8 +11,10 @@ layout: base.njk
     </div>
 
     <ul>
-    {% for c in cars %}
-        <li><a href="">{{ c.brand }}</a></li>
+        <li><h2>{{ air[0].country }}</h2></li>
+    {% for c in air[0].data %}
+        <li><a href="">{{ c.state }}</a>
+        </li>
     {% endfor %}
     </ul>
 </div>

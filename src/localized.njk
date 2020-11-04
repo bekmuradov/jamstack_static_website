@@ -1,0 +1,19 @@
+---
+title: list of states
+layout: base.njk
+pagination:
+    data: air
+    size: 1
+    alias: air
+permalink: /{{ air.country }}/index.html
+---
+
+<div class="container">
+    <ul>
+        <li><h2>{{ air.country }}</h2></li>
+    {% for c in air.data %}
+        <li><a href="">{{ c.state }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>

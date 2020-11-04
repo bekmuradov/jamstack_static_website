@@ -6,5 +6,8 @@ layout: base.njk
 <div class="container">
     <h1>This is a page for Jamstack</h1>
     <p>It was made for you using HTML, CSS and Javascript. And served as a JAMSTACK site.</p>
-
 </div>
+
+{% for c in air %}
+    <a href="/{{ c.country }}">{{ c.country }}</a> |
+{% endfor %}
