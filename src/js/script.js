@@ -8,4 +8,6 @@ const vibes = [
 let vibe = vibes[Math.floor(Math.random() * Math.floor(vibes.length))]
 
 // display the vibe
-document.querySelector(".vibe").append(vibe)
+if (document.querySelector(".vibe") == true) {
+    document.querySelector(".vibe").append(vibe)
+}

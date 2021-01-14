@@ -1,6 +1,10 @@
 {
     "list": [
         {
+            "name": "USA",
+            "code": "us"
+        },
+        {
             "name": "Thailand",
             "code": "th"
         },
@@ -15,10 +19,6 @@
         {
             "name": "India",
             "code": "in"
-        },
-        {
-            "name": "USA",
-            "code": "us"
         },
         {
             "name": "China",

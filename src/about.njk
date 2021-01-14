@@ -8,6 +8,6 @@ layout: base.njk
     <p>It was made for you using HTML, CSS and Javascript. And served as a JAMSTACK site.</p>
 </div>
 
-{% for c in air %}
-    <a href="/{{ c.country }}">{{ c.country }}</a> |
+{% for article in news %}
+    <a href="/{{ article.country }}">{{ article.country }}</a> |
 {% endfor %}

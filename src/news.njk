@@ -1,28 +1,24 @@
 ---
-title: Daily News
+title: The latest news
 layout: base.njk
-pagination:
-    data: news
-    size: 1
-    alias: news
-permalink: /{{ news.country }}/index.html
 ---
 
 <div class="container">
+    <h1>{{ news[0].country }}</h1>
     <div class="row">
-    {% for article in news.articles %}
+    {% for article in news[0].articles %}
         
     <div class="col s12 m6">
-      <div class="card medium">
+      <div class="card small">
         <div class="card-image">
           <img src="{{ article.urlToImage }}">
-          <span class="card-title">{{ article.source.name }} | <time datetime={{ article.publishedAt }}>{{ article.publishedAt }}</time></span>
+          <span class="card-title">{{ article.title }}</span>
         </div>
         <div class="card-content">
           <p>{{ article.description }}</p>
         </div>
         <div class="card-action">
-          <a href="{{ article.url }}">{{ article.title }}</a>
+          <a href="{{ article.url }}">This is a link</a>
         </div>
       </div>
     </div>
