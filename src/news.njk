@@ -12,7 +12,7 @@ layout: base.njk
       <div class="card small">
         <div class="card-image">
           <img src="{{ article.image }}">
-          <span class="card-title">{{ article.source.name }} | <time datetime={{ article.publishedAt }}>{{ article.publishedAt }}</time></span>
+          <span class="card-title grey-text text-darken-4">{{ article.source.name }} | <time datetime={{ article.publishedAt }}>{{ article.publishedAt }}</time></span>
         </div>
         <div class="card-content">
           <p>{{ article.description }}</p>
@@ -26,3 +26,5 @@ layout: base.njk
     {% endfor %}
     </div>
 </div>
+
+
