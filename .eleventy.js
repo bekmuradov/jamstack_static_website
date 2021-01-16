@@ -5,7 +5,7 @@ module.exports = (config) => {
         dir: {
             input: "src",
             output: "dist",
-            data: "_data/news"
+            data: "_data"
         }
     }
 }
